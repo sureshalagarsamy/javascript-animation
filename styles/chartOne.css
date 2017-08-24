@@ -1,0 +1,17 @@
+#sliders {
+	min-width: 310px; 
+	max-width: 800px;
+	margin: 0 auto;
+}
+#container {
+	height: 400px;
+	max-width: 310px;
+	max-width: 800px;
+	/*margin: 0 auto;*/
+	/*float: left;*/
+	/*text-align: left;*/
+}
+g.highcharts-button, g.highcharts-legend-item
+{
+	display: none;
+}

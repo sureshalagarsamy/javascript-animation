@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="styles/shellScript.css" />
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 useCaseTitle">Shell Script</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<span class="submitBtn" ng-show="shellScript.show"   ng-click="showShellScriptFile()">Show</span>
+	<span class="submitBtn" ng-show="shellScript.hide"	 ng-click="hideShellScriptFile()">Hide</span>
+	<span class="clearBtn" 	ng-show="shellScript.clear"	 ng-click="clearShellScriptFile()">Clear</span>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 cmdBoxRoot" ng-show="shellScript.clear">
+	<input type="text" class="form-control cmdTextBox" ng-model="shellScript.cmd" />
+	<span class="clearBtn" 	ng-show="shellScript.clear"	 ng-click="getResult()">Send</span>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 puttyRoot" ng-show="shellScript.hide" id="resizeDiv">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 puttyImage">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 puttyDataRoot">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
+			<div id="messagewindow" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 puttyData"scroll-glue>
+				<div class="cmdData" ng-repeat="myData in displayData">
+					<div>{{myData.cmd}}</div>
+					<div ng-repeat="cmdResult in myData.Value track by $index">{{cmdResult}}</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<span class="closePopup" ng-click="hideShellScriptFile()">&nbsp;</span>
+</div>

@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="styles/graph.css" />
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 useCaseTitle">Animation</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<span class="submitBtn" ng-show="graph.show"   ng-click="showGraph()">Show</span>
+	<span class="submitBtn" ng-show="graph.hide"	   ng-click="hideGraph()">Hide</span>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
+<div id="resizeDiv" ng-show="graph.hide">
+	<div id="myGraph" ng-drag="true" data-allow-transform="false">
+		<!--<div id="myGraph"></div>-->
+	</div>
+</div>
+<div id="output"></div>

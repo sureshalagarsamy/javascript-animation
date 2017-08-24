@@ -1,0 +1,45 @@
+svg path{
+	stroke: #000;
+	stroke-width: 1px;
+	stroke: rgba(0,0,0,0.2);
+}
+svg{
+	border: 1px solid #DED8BF;
+	background-color: #f9f9f9;
+	border-radius: 5px;
+	width: 700px;
+	height: 400px;
+}
+h1{
+	font-weight: normal;
+	margin: 0;
+	padding-left: 5px;
+	color: #53483e;
+}
+p{
+	margin: 0;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	color: #917e6b;
+}
+.myChart ul{
+	width: 200px;
+	float: left;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	padding-right: 10px;
+	display: none;
+}
+.myChart li{
+	cursor: pointer;
+	background-color: #c8ad93;
+	padding: 10px;
+	margin: 2px;
+	color: #fff;
+}
+.useCaseTitle
+{
+	font-size: 20px;
+	color: #333;
+}

@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="styles/arrow.css" />
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Arrow animation</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 arrowRoot">
+	<img ng-src="{{spanList.selected?arrow.activeGreenPath:arrow.defaultBlueImgPath}}" class="arrow" ng-class="{'active':spanList.selected == true}" ng-repeat="spanList in spanList">&nbsp;</span>
+	<img ng-src="{{arrow.arrowMarkSelected?arrow.activeGreenMarkPath:arrow.defaultBlueMarkPath}}" class="arrowMark" ng-class="{'arrowMarkSelected':arrow.arrowMarkSelected == true}">&nbsp;</span>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<span class="submitBtn" ng-show="arrow.start"	ng-click="startAnimation()">Start</span>
+	<span class="submitBtn" ng-show="arrow.stop"	ng-click="stopAnimation()">Stop</span>
+</div>

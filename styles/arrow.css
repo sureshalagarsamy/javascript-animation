@@ -1,0 +1,44 @@
+.arrow
+{
+	width: 72px;
+	height: 36px;
+	display: inline-block;
+	margin-left: 3px;
+}
+.arrowMark
+{
+	width: 72px;
+	height: 36px;
+	/*background: url("images/arrow_mark_blue.png");*/
+	display: inline-block;
+	top: -1px;
+	position: inherit;
+	left: -4px;
+}
+.arrowRoot
+{
+	height: 54px;
+	line-height: 54px;
+}
+.submitBtn
+{
+	width: 72px;
+	height: 31px;
+	line-height: 29px;
+	display: inline-block;
+	background-color: #f0f1de;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 6px;
+	font-family: Tele-GroteskHal;
+	font-size: 15px;
+	border: 1px solid #a8ab7d;
+}
+.active
+{
+	background: url("images/arrow_rect_green.png");
+}
+.arrowMarkSelected
+{
+	background: url("images/arrow_mark_green.png");
+}

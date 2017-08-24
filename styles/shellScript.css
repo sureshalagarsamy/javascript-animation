@@ -1,0 +1,90 @@
+.submitBtn
+{
+	width: 72px;
+	height: 72px;
+	line-height: 72px;
+	background: #fdfb41;
+	border-radius: 50%;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+}
+.cmdTextBox
+{
+	width: 360px;
+	height: 36px;
+	line-height: 36px;
+	display: inline-block;
+}
+.cmdBoxRoot
+{
+	margin: 18px 0;
+}
+.useCaseTitle
+{
+	font-size: 20px;
+	color: #333;
+}
+.clearBtn
+{
+	width: 72px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	background: #DDD;
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 4px;
+}
+.closePopup
+{
+	position: absolute;
+	top: 21px;
+	right: 27px;
+	cursor: pointer;
+	width: 58px;
+	height: 27px;
+}
+.puttyImage
+{
+	width: inherit;
+	height: inherit;
+	/*margin: 20px;*/
+	background: url(images/black_bg.png);
+	background-repeat:no-repeat;
+}
+.puttyRoot
+{
+	position: relative;
+	width: 880px;
+	height: 549px;
+	padding: 20px;
+}
+.puttyDataRoot
+{
+	padding: 0;
+	font-size: 12px;
+	color: #FFF;
+}
+.puttyData
+{
+	padding: 0;
+	height: 502px;
+	overflow: auto;
+	width: 816px;
+	overflow-y: scroll;
+	top: 4px;
+}
+[scroll-glue-left],
+[scroll-glue-right]{
+	width: 100px;
+	overflow-x: scroll;
+	border: 1px solid gray;
+	overflow-y: scroll;
+	padding: 10px;
+}
+
+[scroll-glue-left] span,
+[scroll-glue-right] span{
+	border: 1px solid black;
+}

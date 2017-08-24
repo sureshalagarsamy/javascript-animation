@@ -1,0 +1,75 @@
+.submitBtn
+{
+	width: 72px;
+	height: 72px;
+	line-height: 72px;
+	background: #fdfb41;
+	border-radius: 50%;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+}
+.submitBtn:hover
+{
+	width: 72px;
+	height: 72px;
+	line-height: 72px;
+	background: #f3f295;
+	border-radius: 50%;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+}
+.useCaseTitle
+{
+	font-size: 20px;
+	color: #333;
+}
+path { 
+	stroke: steelblue;
+	stroke-width: 2;
+	fill: none;
+}
+
+.axis path,
+.axis line {
+	fill: none;
+	stroke: grey;
+	stroke-width: 1;
+	shape-rendering: crispEdges;
+}
+svg g
+{
+	width: inherit;
+	height: inherit;
+}
+#myGraph
+{
+	cursor: move;
+	/*width: 99%;*/
+	height: 99%
+		display: inline-block;
+	/*border:1px solid #FFF;*/
+	position: relative;
+}
+#myGraph:hover
+{
+	/*border:1px solid #e1e2d4;*/
+	box-shadow: 0 0 6px rgba(0,0,0,0.2);
+	border-radius: 6px;
+	width:inherit;
+	height: inherit;
+}
+
+#resizeDiv
+{
+	width: 650px;
+	height: 300px;
+	display: inline-block;
+	border-radius: 6px;
+	box-shadow: 0 0 2px rgba(0,0,0,0.1);
+	/*resize: both;
+	overflow: auto;*/
+	border: 1px solid #e2e6b0;
+	margin-left: 20px;
+}

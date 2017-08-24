@@ -1,0 +1,45 @@
+.submitBtn
+{
+	width: 72px;
+	height: 72px;
+	line-height: 72px;
+	background: #fdfb41;
+	border-radius: 50%;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+}
+#resizeDiv
+{
+	width: 450px;
+	height: 270px;
+	display: inline-block;
+	border-radius: 6px;
+	box-shadow: 0 0 2px rgba(0,0,0,0.1);
+	border: 1px solid #e2e6b0;
+	/*padding: 18px;*/
+	cursor: move;
+	margin: 20px;
+}
+#resizeDiv img
+{
+	padding: 2px;
+	height: 267px;
+	width: 447px;
+}
+.changePictureBtn
+{
+	width: 118px;
+	height: 27px;
+	line-height: 27px;
+	text-align: center;
+	background: #DDD;
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 4px;
+}
+.useCaseTitle
+{
+	font-size: 20px;
+	color: #333;
+}

@@ -1,0 +1,39 @@
+.submitBtn
+{
+	width: 72px;
+	height: 72px;
+	line-height: 72px;
+	background: #fdfb41;
+	border-radius: 50%;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+}
+#resizeDiv
+{
+	width: 680px;
+	height: 520px;
+	display: inline-block;
+	border-radius: 6px;
+	border: 1px solid #FFF;
+	margin: 20px;
+	cursor: move;
+}
+#resizeDiv:hover
+{
+	border:1px solid #e1e2d4;
+	cursor: move !important;
+	box-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
+#resizeDiv embed
+{
+	margin: 20px;
+	height: 480px;
+	width: 640px;
+	cursor: default;
+}
+.useCaseTitle
+{
+	font-size: 20px;
+	color: #333;
+}

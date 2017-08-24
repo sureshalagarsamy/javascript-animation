@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>_-animation-_</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--<link rel="shortcut icon" href="./images/animation_icon.png" type="image/png"></link>-->
+		<link rel="Stylesheet" type="text/css" href="styles/bootstrap-v3.3.1.css">
+		<!--<link rel="stylesheet" type="text/css" href="styles/jquery-ui.css">-->
+
+		<script src="scripts/common/library/angularJS.min_1.4.0.js"></script>
+		<script src="scripts/common/library/angularJS-route.min_1.4.0.js"></script>
+		
+		<script src="scripts/common/library/d3.v3.min.js"></script>
+		<script src="scripts/common/library/surface3d.js"></script>
+		<script src="scripts/common/library/ngDraggable.js"></script>
+		<script src="scripts/common/library/scrollglue.js"></script>
+		
+		<script type="text/javascript" src="scripts/common/library/jquery-1.11.3.min.js"></script>
+		
+		<!--<script src="scripts/common/library/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="scripts/common/library/jquery-ui-1.7.2.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles/jquery-ui-1.7.1.css"/>-->
+		
+		<script src="scripts/common/library/jquery.min-1.3.2.js"></script>
+		<script type="text/javascript" src="scripts/common/library/jquery-ui-1.7.2.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles/jquery-ui-1.7.1.css"/>
+		
+		<!--Start:chart-1-->
+		<script src="scripts/common/library/highcharts-4.2.5.js"></script>
+		<script src="scripts/common/library/highcharts-3D-4.2.5.js"></script>
+		<script src="scripts/common/library/exporting.js"></script>
+		<script src="scripts/common/library/plotly-1.15.0.js"></script>
+		<!--End:chart-1-->
+	</head>
+
+<body ng-app="animationApp">
+		<div>
+			<div id="top-menu" ng-include="'views/menu/top-menu.html'"></div>
+			<div id="ng-view">
+				<ng-view></ng-view>
+			</div>
+		</div>
+		
+		<!-- GLOBAL JAVASCRIPT FILES -->
+		<script src="scripts/app.js"></script>
+
+		<!-- PAGE WISE SCRIPTS -->
+		<script src="scripts/controllers/arrowController.js"></script>
+		<script src="scripts/controllers/wheelsController.js"></script>
+		<script src="scripts/controllers/dragDropController.js"></script>
+		<script src="scripts/controllers/graphController.js"></script>
+		<script src="scripts/controllers/logFileController.js"></script>
+		<script src="scripts/controllers/shellScriptController.js"></script>
+		<script src="scripts/controllers/VNCClientController.js"></script>
+		<script src="scripts/controllers/VLCClientController.js"></script>
+		<script src="scripts/controllers/bgPictureController.js"></script>
+		<script src="scripts/controllers/chartOneController.js"></script>
+		<script src="scripts/controllers/chartTwoController.js"></script>
+		<script src="scripts/controllers/chartThreeController.js"></script>
+		<script src="scripts/controllers/chartFourController.js"></script>
+		<script src="scripts/controllers/chartFiveController.js"></script>
+	</body>
+</html>

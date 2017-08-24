@@ -1,0 +1,116 @@
+.circle
+{
+	width: 99px;
+	height: 99px;
+	border-radius: 50%;
+	background-color: #fdfb41;
+	display: inline-block;
+}
+.rectangle
+{
+	width: 250px;
+	height: 250px;
+	background-color: #b1f36b;
+	display: inline-block;
+}
+.useCaseTitle
+{
+	font-size: 20px;
+	color: #333;
+}
+[ng-drag], [ng-drag-clone]
+{
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.drag-object, [ng-drag-clone], [ng-drop] [ng-drag]{
+	width: 72px;
+	height: 72px;
+	line-height: 72px;
+	background: rgba(255, 243, 5, 1);
+	color:white;
+	text-align: center;
+	display: inline-block;
+	margin:0 10px;
+	/*cursor: move;*/
+	position: relative;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.drag-object [ng-drag]{
+	width: 72px;
+	height: 72px;
+	line-height: 72px;
+	/*background: rgba(255, 243, 5, 0.2);*/
+	color:#545454;
+	border-radius: 50%;
+	text-align: center;
+	display: inline-block;
+	cursor: move;
+}
+[ng-drag-clone]{
+	margin: 0;
+	cursor: move;
+	/*background: rgba(255, 243, 5, 0.2); */   /* Dont delete this property */
+	background-color: #efefef;
+}
+[ng-drag].drag-over{
+	border:solid 1px red;
+}
+[ng-drag].dragging{
+	opacity: 0.5;
+}
+[ng-drop]{
+	/*background: rgba(0,255,0, 0.2);*/
+	background-color: #a9ed50;
+	text-align: center;
+	height: 108px;
+	padding-top:16px;
+	display: block;
+	line-height: 108px;
+	width: 200px;
+	position: relative;
+	border:solid 1px #f73b3b;
+	border-radius: 6px;
+}
+[ng-drop].drag-enter{
+	border:solid 1px #fd8686;
+}
+[ng-drop] span.title{
+	display: block;
+	position: absolute;
+	top:50%;
+	left:50%;
+	width: 200px;
+	height: 20px;
+	margin-left: -100px;
+	margin-top: -10px;
+}
+[ng-drop] div{
+	position: relative;
+	z-index: 2;
+}
+.droppedBG
+{
+	background-color:#f73b3b;
+}
+.dragElement
+{
+	margin-top: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

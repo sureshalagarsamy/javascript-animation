@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="styles/dragDrop.css" />
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 useCaseTitle">Animation</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 dragElement">
+		<span class="draggable-objects" draggable="false">
+			<span  ng-repeat="obj in draggableObjects" class="drag-object" >
+				<div ng-drag="true" ng-drag-data="obj" data-allow-transform="true"> {{obj.name}} </div>
+			</span>
+		</span>
+	</div>
+	<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+		<div id="myDiv" ng-drop="true" ng-drop-success="onDropComplete($data,$event)">
+			<div ng-repeat="obj in droppedObjects" ng-drag="false" ng-drag-data="obj" ng-drag-success="onDragSuccess($data,$event)" ng-center-anchor="{{centerAnchor}}">
+				{{obj.name}}
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">&nbsp;</div>
+</div>
+<div ng-drag-clone="">
+	{{clonedData.name}}
+</div>

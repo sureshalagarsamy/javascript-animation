@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="styles/logFile.css" />
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Log File</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<span class="submitBtn" ng-show="logFile.show"   ng-click="showLogFile()">Show</span>
+	<span class="submitBtn" ng-show="logFile.hide"	 ng-click="hideLogFile()">Hide</span>
+	<span class="clearBtn" 	ng-show="logFile.clear"	 ng-click="clearLogFile()">Clear</span>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 puttyRoot" ng-show="logFile.hide" id="resizeDiv">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 puttyImage">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 puttyDataRoot">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
+			<div id="messagewindow" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 puttyData" scroll-glue>
+				<div class="logData" ng-repeat="myData in displayData track by $index">{{myData}}</div>
+			</div>
+		</div>
+	</div>
+	<span class="closePopup" ng-click="hideLogFile()">&nbsp;</span>
+</div>

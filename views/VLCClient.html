@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="styles/VLCClient.css" />
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 useCaseTitle">VLC Client</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<span class="submitBtn" ng-show="vlc.show"   ng-click="showVideo()">Show</span>
+	<span class="submitBtn" ng-show="vlc.hide"	 ng-click="hideVideo()">Hide</span>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-show="vlc.hide">
+	<div id="resizeDiv">
+		<embed 
+			   type="application/x-vlc-plugin" 
+			   pluginspage="http://www.videolan.org" 
+			   version="VideoLAN.VLCPlugin.2.2.4"
+			   width="640"
+			   height="480"
+			   target="file:///D:/Media Player/Movies/Sultan.avi"
+			   id="vlc">
+		</embed>
+</div>
+</div>

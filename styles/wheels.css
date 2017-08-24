@@ -1,0 +1,61 @@
+.submitBtn
+{
+	width: 72px;
+	height: 31px;
+	line-height: 29px;
+	display: inline-block;
+	background-color: #f0f1de;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 6px;
+	font-family: Tele-GroteskHal;
+	font-size: 15px;
+	border: 1px solid #a8ab7d;
+}
+.draggable
+{
+	/*cursor: move;*/
+}
+.useCaseTitle
+{
+	font-size: 20px;
+	color: #333;
+}
+path {
+	fill-rule: evenodd;
+	stroke: #333;
+	stroke-width: 2px;
+}
+
+.sun path {
+	fill: #393A3D;
+}
+
+.planet1 path {
+	fill: #01B050;
+}
+.planet2 path {
+	fill: #e2e6b0;
+	position: relative;
+}
+
+.annulus path {
+	fill: #c6dbef;
+}
+#outerDiv
+{
+	width: 270px;
+	height: 340px;
+	position: absolute;
+	left: 9px;
+	top: 150px;
+	cursor: move;
+	display:inline-block;
+	border:1px solid #FFF;
+}
+#outerDiv:hover
+{
+	border:1px solid #e1e2d4;
+	box-shadow: 0 0 6px rgba(0,0,0,0.2);
+	border-radius: 6px;
+}
